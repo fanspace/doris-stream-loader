@@ -207,19 +207,19 @@ func WithLabel(label string) Option {
 		req.header["label"] = label
 	}
 }
-
+// add new options
 func WithMergeType(mergeType string) Option {
 	return func(req *request) {
 		req.header["merge_type"] = mergeType
 	}
 }
-
+// json format
 func WithFormat(format string) Option {
 	return func(req *request) {
 		req.header["format"] = format
 	}
 }
-
+// json array
 func WithStripOuterArray(isArr  bool) Option {
 	return func(req *request) {
 		req.header["strip_outer_array"] = isArr
