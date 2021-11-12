@@ -1,3 +1,3 @@
-module github.com/yale8848/doris-stream-loader
+module github.com/fanspace/doris-stream-loader
 
 go 1.12
