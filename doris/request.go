@@ -220,7 +220,7 @@ func WithFormat(format string) Option {
 	}
 }
 // json array
-func WithStripOuterArray(isArr  bool) Option {
+func WithStripOuterArray(isArr  string) Option {
 	return func(req *request) {
 		req.header["strip_outer_array"] = isArr
 	}
